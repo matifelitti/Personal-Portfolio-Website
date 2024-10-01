@@ -27,7 +27,9 @@ header {
   top: 0;
   left: 0;
   padding: 1rem 1.5rem;
+  background-color: black;
   color: white;
+  opacity: 95%;
 }
 
 .navbar {
@@ -48,6 +50,7 @@ header {
 
 .home {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   padding: 0 10rem;
@@ -80,4 +83,21 @@ header {
   margin: 5rem;
   width: 400px;
   height: 400px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(90px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-container img {
+  width: 80px;
+  height: 80px;
 }
