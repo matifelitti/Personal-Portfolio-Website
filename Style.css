@@ -95,6 +95,19 @@ header {
   display: grid;
   grid-template-columns: repeat(6, minmax(90px, 1fr));
   gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container h2 {
+  grid-column: span 6;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: rgb(192, 230, 230);
+  left: 0;
+  right: 0;
 }
 
 .skills-container img {
