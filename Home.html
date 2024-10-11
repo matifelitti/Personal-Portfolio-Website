@@ -4,25 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Dev</title>
+    <title>JohnDev</title>
     <link rel="stylesheet" href="Style.css" />
 </head>
 
 <body>
 
     <header>
-        <a href="#" class="johnDev">John Dev</a>
+        <a href="#" class="johnDev">JohnDev</a>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Proyects</a>
-            <a href="#">Contact</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
         <div class="home-container">
-            <h1>My name is John Dev</h1>
+            <h1>My name is JohnDev</h1>
             <h2>Fullstack Developer</h2>
             <p>I enjoy building dynamic, creative products from start to finish. Focused on developing
                 intuitive experiences that constantly grow and improve based on user metrics. Always shipping.</p>
@@ -30,31 +37,33 @@
         <img class="john-image" src="john-image.jpeg" alt="john image">
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="skills-container">
             <h2>Skills</h2>
-            <img src="programming-logos/html5.svg" alt="html">
-            <img src="programming-logos/css3.svg" alt="css">
-            <img src="programming-logos/javascript.svg" alt="js">
-            <img src="programming-logos/angular.svg" alt="angular">
-            <img src="programming-logos/typescript.svg" alt="ts">
-            <img src="programming-logos/c.svg" alt="c">
-            <img src="programming-logos/c++.svg" alt="c++">
-            <img src="programming-logos/spring.svg" alt="spring">
-            <img src="programming-logos/kotlin.svg" alt="kotlin">
-            <img src="programming-logos/php.svg" alt="php">
-            <img src="programming-logos/postgresql.svg" alt="postgresql">
-            <img src="programming-logos/python.svg" alt="python">
-            <img src="programming-logos/ruby.svg" alt="ruby">
-            <img src="programming-logos/react.svg" alt="react">
-            <img src="programming-logos/redux.svg" alt="redux">
-            <img src="programming-logos/vuejs.svg" alt="vue">
-            <img src="programming-logos/boostrap.svg" alt="boostrap">
-            <img src="programming-logos/vscode.svg" alt="vsc">
+            <div class="skills-grid">
+                <img src="programming-logos/html5.svg" alt="html">
+                <img src="programming-logos/css3.svg" alt="css">
+                <img src="programming-logos/javascript.svg" alt="js">
+                <img src="programming-logos/angular.svg" alt="angular">
+                <img src="programming-logos/typescript.svg" alt="ts">
+                <img src="programming-logos/c.svg" alt="c">
+                <img src="programming-logos/c++.svg" alt="c++">
+                <img src="programming-logos/spring.svg" alt="spring">
+                <img src="programming-logos/kotlin.svg" alt="kotlin">
+                <img src="programming-logos/php.svg" alt="php">
+                <img src="programming-logos/postgresql.svg" alt="postgresql">
+                <img src="programming-logos/python.svg" alt="python">
+                <img src="programming-logos/ruby.svg" alt="ruby">
+                <img src="programming-logos/react.svg" alt="react">
+                <img src="programming-logos/redux.svg" alt="redux">
+                <img src="programming-logos/vuejs.svg" alt="vue">
+                <img src="programming-logos/bootstrap.svg" alt="bootstrap">
+                <img src="programming-logos/vscode.svg" alt="vsc">
+            </div>
         </div>
     </section>
 
-    <h2 class="h2proyects">Proyects</h2>
+    <h2 id="projects" class="h2projects">Proyects</h2>
     <section class="pages">
         <div class="page-container">
             <img src="pages/1.jpeg" alt="store">
@@ -99,6 +108,26 @@
     </section>
 
 
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <p>Email: johndev@example.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>LinkedIn: <a href="#">linkedin.com/in/johndev</a></p>
+            </div>
+            <form class="contact-form">
+                <h3>Get in Touch</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
