@@ -13,10 +13,16 @@ navLinks.forEach((link) => {
 
     const targetId = link.getAttribute("href");
     const targetSection = document.querySelector(targetId);
+    const navbarHeight = 105;
 
-    targetSection.scrollIntoView({
+    const targetPosition =
+      targetSection.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+    window.scrollTo({
+      top: targetPosition,
       behavior: "smooth",
-      block: "start",
     });
+
+    navbarLinks.classList.remove("active");
   });
 });

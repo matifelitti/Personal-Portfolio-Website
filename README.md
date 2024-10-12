@@ -1,6 +1,6 @@
 # John Dev - Personal Portfolio
 
-This repository contains the source code for a personal portfolio website. The website showcases skills, experience, and provides a way to contact. It is built using **HTML** and **CSS** to create a clean, responsive, and user-friendly design.
+This repository contains the source code for a personal portfolio website. The website showcases skills, experience, and provides a way to contact. It is built using **HTML** , **CSS** and **JavaScript** to create a clean, responsive, and user-friendly design.
 
 ## 📑 Features
 
@@ -12,3 +12,4 @@ This repository contains the source code for a personal portfolio website. The w
 
 - **HTML5**: Provides the structure of the website.
 - **CSS3**: Responsible for styling, including layout, fonts, and colors.
+- **JavaScript**: Interactivity and dynamic features to enhance user experience.

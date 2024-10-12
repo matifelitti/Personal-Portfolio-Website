@@ -20,11 +20,13 @@ body {
 
 header {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   top: 0;
   left: 0;
+  height: 95px;
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -92,6 +94,15 @@ header {
   color: rgb(192, 230, 230);
 }
 
+.navbar-links a {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(192, 230, 230, 0.3);
+  transform: scale(1.05);
+}
+
 .navbar-links.active {
   display: flex;
 }
@@ -100,14 +111,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
-  margin-top: 8rem;
+  margin-top: 10rem;
   padding: 0 5rem;
   flex-wrap: wrap;
 }
 
 .home-container {
   max-width: 500px;
+  margin-top: 3rem;
   margin-right: 2rem;
   text-align: left;
 }
@@ -130,6 +141,26 @@ header {
   line-height: 1.5;
 }
 
+.home-form button {
+  margin-top: 1.6rem;
+  padding: 0.8rem 2.4rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(9, 9, 44);
+  color: rgb(149, 206, 206);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-form button:hover {
+  background-color: rgb(149, 206, 206);
+  color: rgb(9, 9, 44);
+  transform: scale(1.05);
+}
+
 .john-image {
   margin-top: 2rem;
   width: 400px;
@@ -139,7 +170,6 @@ header {
 .skills {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
 }
 
 .skills-container {
@@ -180,7 +210,10 @@ header {
 
 .h2projects {
   margin-top: 5rem;
-  text-align: center;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   color: rgb(192, 230, 230);
 }
 
@@ -205,10 +238,15 @@ header {
 .page-container img {
   width: 100%;
   max-width: 350px;
-  height: auto;
+  height: 200px;
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.page-container img:hover {
+  transform: scale(1.03);
 }
 
 .title {
@@ -244,7 +282,7 @@ header {
 }
 
 .footer {
-  background-color: black;
+  background-color: #1a1a1a;
   color: white;
   padding: 2rem 1.5rem;
   text-align: center;
@@ -300,7 +338,7 @@ header {
 }
 
 .contact-form button {
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 2.4rem;
   border: none;
   border-radius: 10px;
   background-color: rgb(18, 18, 83);
