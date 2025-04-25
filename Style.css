@@ -11,6 +11,10 @@ body {
   background-color: rgb(18, 18, 83);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .johnDev {
   font-size: 1.8rem;
   color: white;
@@ -62,10 +66,6 @@ header {
   text-align: center;
   width: 100%;
   transition: background-color 0.3s;
-}
-
-.navbar-links a:hover {
-  background-color: rgba(192, 230, 230, 0.3);
 }
 
 .menu-toggle {
